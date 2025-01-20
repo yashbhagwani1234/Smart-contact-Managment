@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}"></title>
+</head>
+<body>
+       <section>
+            <div class="container">
+                 <div class="card">
+                     <div class="card-body">
+                          <div class="text-center">
+                    <img src="" style="height:200px; width: 200px" class="my_profile_pic" th:src="@{'/img/contact_logo.png'}" alt="profile photo"/>
+                                    <h1 class="text-center mt-3 text-primary font-italic"> Start Adding Your Contact on Cloud</h1>
+                    </div>
+                  <p>
+<h1 class="text-center ">Terms and Conditions for Smart Contact Management</h1>
+Below is an example of terms and conditions for a Smart Contact Management System. You can customize them based on your application's features and intended usage:
+
+Terms and Conditions
+Effective Date: [07-01-2025]
+
+Welcome to [Smart Contact Management System]! By using this application, you agree to comply with and be bound by the following terms and conditions. Please read them carefully before using the service.
+<h4>1. Acceptance of Terms</h4>
+
+1. Acceptance of Terms
+By accessing or using the Smart Contact Management System (hereafter referred to as "the System"), you agree to be bound by these Terms and Conditions. If you do not agree, you may not use the System.
+<h4>2. User Accounts</h4>
+
+
+You are responsible for maintaining the confidentiality of your account credentials and for any activities or actions under your account.
+You agree to provide accurate, complete, and up-to-date information during registration and keep it updated.
+You must not share your account credentials with unauthorized individuals.
+<h4>3. Data Privacy</h4>
+
+
+Your personal data and contact information are securely stored in compliance with data protection regulations (e.g., GDPR, CCPA, or applicable local laws).
+We do not share, sell, or misuse your data. For more details, refer to our Privacy Policy.
+Users are solely responsible for the accuracy of the contact information entered into the System.
+<h4>4. Usage Policy</h4>
+
+
+The System is intended for lawful purposes only. You agree not to use the System:
+For spamming, harassment, or fraudulent activities.
+To upload or store illegal, harmful, or offensive content.
+To breach any intellectual property or third-party rights.
+The System may not be used to store or share sensitive data such as financial information, passwords, or classified information.
+<h4>5. Intellectual Property</h4>
+
+
+All content, logos, and designs associated with the System are the property of [Your Company/Organization Name] and are protected by intellectual property laws.
+You may not copy, distribute, or modify the application’s code, designs, or any part of the System without explicit permission.
+<h4>6. Third-Party Services</h4>
+
+
+The System may integrate with third-party tools or services (e.g., email or file upload services). The use of third-party services is subject to their respective terms and policies.
+We are not liable for issues caused by third-party integrations.
+<h4>7. Limitation of Liability</h4>
+
+7. Limitation of Liability
+While we strive to maintain the highest level of reliability and security, we cannot guarantee that the System will be free from errors, interruptions, or vulnerabilities.
+We are not liable for any data loss, service disruptions, or unauthorized access caused by circumstances beyond our control (e.g., hacking, server issues).
+<h4>8. Modifications to the Service</h4>
+
+8. Modifications to the Service
+We reserve the right to update, modify, or discontinue the System or its features at any time without prior notice.
+Continued use of the System after any updates signifies your acceptance of the changes.
+<h4>9. Termination of Use</h4>
+
+
+We reserve the right to suspend or terminate your access to the System at any time for any breach of these terms or misuse of the System.
+Upon termination, you must cease all use of the System and delete any copies of data or content obtained through it.
+<h4>10. Governing Law</h4>
+
+
+These Terms and Conditions are governed by the laws of [Your Jurisdiction]. Any disputes will be resolved under the exclusive jurisdiction of the courts in [Your Location].
+<h4>11. Contact Information</h4>
+For questions or concerns about these Terms and Conditions, please contact us at:
+<br>
+Email: [<a href="">yashbhagwani@gmail.com</a>]
+<br>
+Phone: [8949334363]
+
+<h4>12. Acknowledgment</h4>
+By using the Smart Contact Management System, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.</p>
+                <div class="form-group form--check">                               
+                                      <input type="checkbox" class="form-check-input" name="agreement" id="agreement">
+                                      <label for="agreement " class="ag">Accept terms and condition applied</label>
+                                </div>
+                <div class="text-center">
+                <a th:href="@{/user/add-contact}" class="btn btn-primary btn-block text-uppercase  mt-4">Add New Contact</a>
+                </div>
+                     </div>
+                 </div>
+            </div>
+       </section>
+</body>
+</html>
